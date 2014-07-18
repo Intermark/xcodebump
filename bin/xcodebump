@@ -20,4 +20,4 @@ global_option('--dontlog') { $nolog = true }
 
 default_command :help
 
-require '../lib/xcodebump'
+require 'xcodebump'
