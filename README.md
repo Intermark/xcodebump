@@ -1,24 +1,21 @@
-# Xcodebump
-
-TODO: Write a gem description
+![banner](resources/banner.png)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'xcodebump'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install xcodebump
+`$ gem install xcodebump`
 
 ## Usage
 
-TODO: Write usage instructions here
+`$ xcodebump bump (-r, -m, -p)`
+
+To bump a version number, you want to pass in one of the three flags in the parentheses above. The one to pass in depends entirely upon which part of the version you want to bump.
+
+**1.2.3**
+
+* `-r` will bump the Release number, or the 1 above.
+* `-m` will bump the Minor number, or the 2 above.
+* `-p` will bump the Patch number, or the 3 above.
+
 
 ## Contributing
 
