@@ -49,19 +49,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bump.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bump.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/xcodebump/commands/bump.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+            <state line="27" column="12" selection-start="700" selection-end="700" vertical-scroll-proportion="0.80039525" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.11857708" vertical-offset="0" max-vertical-offset="506">
+            <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="plist.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/xcodebump/plist.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="5" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1125">
+            <state line="14" column="58" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -125,12 +125,12 @@
         <option value="$PROJECT_DIR$/lib/xcodebump/version.rb" />
         <option value="$PROJECT_DIR$/bin/xcodebump" />
         <option value="$PROJECT_DIR$/lib/xcodebump/commands.rb" />
-        <option value="$PROJECT_DIR$/lib/xcodebump/commands/bump.rb" />
         <option value="$PROJECT_DIR$/xcodebump.gemspec" />
         <option value="$PROJECT_DIR$/lib/xcodebump/colors.rb" />
         <option value="$PROJECT_DIR$/lib/xcodebump.rb" />
-        <option value="$PROJECT_DIR$/lib/xcodebump/plist.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lib/xcodebump/plist.rb" />
+        <option value="$PROJECT_DIR$/lib/xcodebump/commands/bump.rb" />
       </list>
     </option>
   </component>
@@ -456,13 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xcodebump/plist.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="5" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -470,16 +463,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xcodebump/commands/bump.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+        <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/lib/xcodebump/plist.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="94" selection-end="94" vertical-scroll-proportion="0.11857708" vertical-offset="0" max-vertical-offset="506">
+        <state line="14" column="58" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xcodebump/commands/bump.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="12" selection-start="700" selection-end="700" vertical-scroll-proportion="0.80039525" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>

@@ -8,6 +8,8 @@ module Xcodebump
     Dir.glob(Dir.pwd + '/**/*.plist').each do |d|
       plist_paths << d if d.include? '-Info.plist'
     end
+    Xcodebump::red "\n  No Plist files found.\n\n  Please run this from a directory where an Xcode Project/Workspace lives.\n" unless plist_paths.size > 0
+    return unless plist_paths.size > 0
 
     # Ask User which one to Bump
     Xcodebump::blue "\n  Please choose one of the follwing to bump the version number:"
