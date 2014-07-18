@@ -6,7 +6,10 @@
 
 ## Usage
 
-`$ xcodebump bump (-r, -m, -p)`
+```bash
+$ cd /path/where/my/project/lives
+$ xcodebump bump (-r, -m, -p)
+```
 
 To bump a version number, you want to pass in one of the three flags in the parentheses above. The one to pass in depends entirely upon which part of the version you want to bump.
 
