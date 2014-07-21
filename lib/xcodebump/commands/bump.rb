@@ -9,11 +9,13 @@ command :bump do |c|
   c.option '-r', '--release', 'Bumps the release version number, or 1 in 1.2.3'
   c.option '-m', '--minor', 'Bumps the minor version number, or 2 in 1.2.3'
   c.option '-p', '--patch', 'Bumps the patch version number, or 3 in 1.2.3'
+  c.option '-g', '--git', 'Adds the version tag to git and pushes'
 
   c.action do |args, options|
     r = options.release
     m = options.minor
     p = options.patch
+    g = options.git
 
     if r
       m = nil
@@ -27,6 +29,6 @@ command :bump do |c|
     else
       return
     end
-    Xcodebump::update_version_number r, m, p
+    Xcodebump::update_version_number r, m, p, g
   end
 end

@@ -1,8 +1,9 @@
 require 'highline/import'
 require 'colors'
+require 'git'
 
 module Xcodebump
-  def self.update_version_number release, minor, patch
+  def self.update_version_number release, minor, patch, git
     # Find Plist Paths
     plist_paths = []
     Dir.glob(Dir.pwd + '/**/*.plist').each do |d|
@@ -57,12 +58,17 @@ module Xcodebump
     components = path.split('/')
     plist = components[components.size - 1]
     Xcodebump::green "\n  #{plist} updated to #{new_version}\n"
+
+    # Save to Git
+    Xcodebump::add_new_version_to_git new_version if git
   end
 
 
   def self.new_version_string v, release, minor, patch
     v_components = v.split('.')
-    v_components << '0' if v_components.size < 3
+    while v_components.size < 3
+      v_components << '0'
+    end
     v_components[0] = (v_components[0].to_i + 1).to_s if release
     v_components[1] = (v_components[1].to_i + 1).to_s if minor
     v_components[2] = (v_components[2].to_i + 1).to_s if patch
