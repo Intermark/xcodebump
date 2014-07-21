@@ -4,10 +4,10 @@ require 'fileutils'
 
 module Xcodebump
   def self.add_new_version_to_git version
-
-    commit_changes version if Dir.exist? "#{Dir.pwd}/.git"
-    add_tag version if Dir.exist? "#{Dir.pwd}/.git"
-    push_changes version if Dir.exist? "#{Dir.pwd}/.git"
+    d = Dir.exist? "#{Dir.pwd}/.git"
+    commit_changes(version) if d
+    add_tag(version) if d
+    push_changes if d
   end
 
   def self.commit_changes version
@@ -20,7 +20,7 @@ module Xcodebump
     `git push --tags`
   end
 
-  def self.push_changes version
+  def self.push_changes
     `git push`
   end
 end
