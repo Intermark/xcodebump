@@ -69,9 +69,16 @@ module Xcodebump
     while v_components.size < 3
       v_components << '0'
     end
-    v_components[0] = (v_components[0].to_i + 1).to_s if release
-    v_components[1] = (v_components[1].to_i + 1).to_s if minor
-    v_components[2] = (v_components[2].to_i + 1).to_s if patch
+    if release
+      v_components[0] = (v_components[0].to_i + 1).to_s
+      v_components[1] = '0'
+      v_components[2] = '0'
+    elsif minor
+      v_components[1] = (v_components[1].to_i + 1).to_s
+      v_components[2] = '0'
+    elsif patch
+      v_components[2] = (v_components[2].to_i + 1).to_s if patch
+    end
     return v_components.join('.')
   end
 end
