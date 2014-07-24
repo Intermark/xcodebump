@@ -19,6 +19,11 @@ To bump a version number, you want to pass in one of the three flags in the pare
 * `-m` will bump the Minor number, or the 2 above.
 * `-p` will bump the Patch number, or the 3 above.
 
+Additionally, you can pass in `-g` to commit the bump, add a git tag for the newer version number and push both. This looks like so, if you are bumping to a new patch number:
+
+```bash
+$ xcodebump bump -p -g
+```
 
 ## Contributing
 
